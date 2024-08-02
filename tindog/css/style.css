@@ -16,6 +16,82 @@
   }
 }
 
+/* Reset */
+body {
+  margin: 0;
+}
+
+button {
+  border: none;
+}
+
+/* Utilities */
+.flex-container {
+  display: flex;
+}
+
+.flex-col-container {
+  display: flex;
+  flex-direction: column
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.flex-gap-sm {
+  gap: 2.5rem;
+}
+
+/* Title Section */
+.title-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1rem;
+  color: #000;
+}
+
+.nav li {
+  list-style: none;
+  display: inline-block;
+  padding: .25rem;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.download-btn-container {
+  display: flex;
+  justify-content: space-between;
+  gap: .75rem;
+}
+
+.btn {
+  padding: 1rem;
+  border-radius: 15px;
+  text-align: center;
+  vertical-align: center;
+}
+
+.apple-btn {
+  background-color: #fff;
+}
+
+.google-btn {
+  background-color: none;
+}
+
+/* Specific classes */
+
 .icon-square {
   width: 3rem;
   height: 3rem;
