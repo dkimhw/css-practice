@@ -19,6 +19,7 @@
 /* Reset */
 body {
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 button {
@@ -43,12 +44,29 @@ button {
   gap: 2.5rem;
 }
 
+.flex-gap-md {
+  gap: 5rem;
+}
+
+.flex-gap-lg {
+  gap: 10rem;
+}
+
 /* Title Section */
 .title-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.title-content h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.title-img {
+  padding-top: 5px;
 }
 
 .nav {
@@ -75,9 +93,15 @@ button {
   gap: .75rem;
 }
 
+.btn-container {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
+
 .btn {
-  padding: 1rem;
-  border-radius: 15px;
+  padding: .75rem 1.25rem;
+  border-radius: 10px;
   text-align: center;
   vertical-align: center;
 }
