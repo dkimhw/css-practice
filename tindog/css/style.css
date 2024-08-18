@@ -52,6 +52,13 @@ button {
   gap: 10rem;
 }
 
+.grid-col-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .5rem;
+  align-items: center;
+}
+
 /* Title Section */
 .title-content {
   display: flex;
@@ -114,7 +121,29 @@ button {
   background-color: none;
 }
 
-/* Specific classes */
+/* Feature Section */
+#features {
+  width: 75%;
+  padding: 1rem;
+  margin: 1rem auto;
+}
+
+.feature-col {
+  display: grid;
+  grid-template-columns: minmax(10px, 15px) auto;
+  gap: 1.5rem;
+}
+
+.feature-col h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.flex-col-container p {
+  font-size: .75rem;
+}
+
+/* Specific Classes */
 
 .icon-square {
   width: 3rem;
