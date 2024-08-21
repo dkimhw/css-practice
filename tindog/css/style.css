@@ -59,7 +59,23 @@ button {
   align-items: center;
 }
 
+.mt-tiny {
+  margin-top: 1.5rem;
+}
+
+.mt-small {
+  margin-top: 3rem;
+}
+
+.mt-lg {
+  margin-top: 6rem;
+}
+
 /* Title Section */
+#title {
+  padding: 0 2rem;
+}
+
 .title-content {
   display: flex;
   flex-direction: column;
@@ -81,6 +97,10 @@ button {
   gap: 1.5rem;
   font-size: 1rem;
   color: #000;
+}
+
+.nav ul {
+  padding: 0;
 }
 
 .nav li {
@@ -108,7 +128,7 @@ button {
 
 .btn {
   padding: .75rem 1.25rem;
-  border-radius: 10px;
+  border-radius: 7.5px;
   text-align: center;
   vertical-align: center;
 }
@@ -125,7 +145,7 @@ button {
 #features {
   width: 75%;
   padding: 1rem;
-  margin: 1rem auto;
+  margin: 6rem auto 0 auto;
 }
 
 .feature-col {
@@ -141,6 +161,162 @@ button {
 
 .flex-col-container p {
   font-size: .75rem;
+}
+
+/* Testimonial Section */
+
+#testimonial {
+  width: 75%;
+  margin: 6rem auto 0 auto;
+}
+
+.testimonial-title {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.testimonial-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.testimonial-img {
+  border-radius: 10px;
+  max-width: 125px;
+}
+
+.testimonial-img {
+  border-radius: 50%;
+  padding: 5px;
+  width: 350px;
+}
+
+.testimonial-caption {
+  font-size: 1rem;
+  margin-top: .5rem;
+}
+
+.testimonial-companies {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.testimonial-company {
+  max-width: 150px;
+  height: 30px;
+}
+
+/* Pricing Section */
+
+#pricing {
+  width: 80%;
+  margin: 6rem auto 0 auto;
+}
+
+.pricing-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.pricing-text {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 300;
+  color: #787A7A;
+}
+
+.pricing-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .5rem;
+}
+
+.pricing-option {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.pricing-option-header {
+  font-size: 1rem;
+  padding: 1rem .25rem;
+  text-align: center;
+  margin: 0;
+  font-weight: normal;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.pricing-option-header-dark {
+  background-color: #000;
+  color: #fff
+}
+
+.pricing-option-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+
+}
+
+.pricing-option-text p {
+  margin: 0 0 .5rem 0;
+}
+
+.pricing-option-price {
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #787A7A;
+}
+
+.pricing-option-price span  {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.btn-signup {
+  margin: 1rem .5rem .5rem .5rem;
+  border: 1px solid #000;
+  font-size: 1rem;
+}
+
+.btn-pricing-clear {
+  background-color: #fff;
+}
+
+.btn-pricing-dark {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Footer */
+
+#footer {
+  width: 75%;
+  margin: 6rem auto 0 auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+}
+
+.footer-links h3 {
+  margin: 0;
+}
+
+.footer-link {
+  list-style: none;
+  display: block;
+  padding: .25rem;
 }
 
 /* Specific Classes */
