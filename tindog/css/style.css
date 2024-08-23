@@ -27,8 +27,11 @@ button {
 }
 
 /* Utilities */
+
 .flex-container {
   display: flex;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .flex-col-container {
@@ -57,6 +60,16 @@ button {
   grid-template-columns: repeat(3, 1fr);
   gap: .5rem;
   align-items: center;
+}
+
+@media (max-width: 600px) {
+  .grid-col-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 75%;
+  }
 }
 
 .mt-tiny {
@@ -92,26 +105,20 @@ button {
   padding-top: 5px;
 }
 
-.nav {
-  display: flex;
-  gap: 1.5rem;
-  font-size: 1rem;
-  color: #000;
-}
+@media (max-width: 800px) {
+  .title-img {
+    display: none;
+  }
 
-.nav ul {
-  padding: 0;
-}
+  .title-content {
+    margin-bottom: 2.5rem;
+    align-items: center;
+    text-align: center;
+  }
 
-.nav li {
-  list-style: none;
-  display: inline-block;
-  padding: .25rem;
-}
-
-.nav li a {
-  text-decoration: none;
-  color: inherit;
+  .flex-container {
+    width: 90%;
+  }
 }
 
 .download-btn-container {
@@ -145,7 +152,14 @@ button {
 #features {
   width: 75%;
   padding: 1rem;
-  margin: 6rem auto 0 auto;
+  margin: 4rem auto 8rem auto;
+}
+
+@media (max-width: 900px) {
+  #features {
+    width: 90%;
+    margin: 2rem auto 4rem auto;
+  }
 }
 
 .feature-col {
@@ -170,8 +184,14 @@ button {
   margin: 6rem auto 0 auto;
 }
 
+@media (max-width: 800px) {
+  #testimonial {
+    margin-top: 4rem;
+  }
+}
+
 .testimonial-title {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -203,6 +223,29 @@ button {
   justify-items: center;
 }
 
+@media (max-width: 935px) {
+  .testimonial-companies {
+    width: 75%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 1.25rem;
+    margin: 2rem auto;
+  }
+}
+
+@media (max-width: 625px) {
+  .testimonial-companies {
+    width: 95%;
+  }
+}
+
+@media (max-width: 450px) {
+  .testimonial-companies {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+
 .testimonial-company {
   max-width: 150px;
   height: 30px;
@@ -212,7 +255,7 @@ button {
 
 #pricing {
   width: 80%;
-  margin: 6rem auto 0 auto;
+  margin: 6rem auto 3.5rem auto;
 }
 
 .pricing-title {
@@ -232,6 +275,27 @@ button {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: .5rem;
+}
+
+@media (max-width: 900px) {
+  .pricing-options {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 1rem auto 0 auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .pricing-options {
+    width: 75%;
+  }
+}
+
+@media (max-width: 500px) {
+  .pricing-options {
+    width: 90%;
+  }
 }
 
 .pricing-option {
@@ -300,23 +364,43 @@ button {
 /* Footer */
 
 #footer {
-  width: 75%;
-  margin: 6rem auto 0 auto;
+  padding: .5rem 2rem;
+  margin-top: 2rem;
+  transition: .3s;
 }
 
 .footer-grid {
+  width: 75%;
+  margin: 1.5rem auto 0 auto;
+  padding-bottom: 3rem;
   display: grid;
+  column-gap: 2rem;
   grid-template-columns: 2fr repeat(3, 1fr);
 }
 
-.footer-links h3 {
+.footer-section {
+  margin-right: 2rem;
+}
+
+.footer-section h3 {
   margin: 0;
+}
+
+.footer-links {
+  padding: 0;
 }
 
 .footer-link {
   list-style: none;
   display: block;
+  font-weight: 300;
   padding: .25rem;
+}
+
+@media (max-width: 775px) {
+  .footer-section {
+    display: none;
+  }
 }
 
 /* Specific Classes */
